@@ -8,6 +8,8 @@ It does Lazy State Initialization so React doesn't run notes state and therefore
 
 -   Uses react-mde, showdown, split and nanoid
 -   Saves notes in localStorage
+-   Can edit and/or delete notes
+-   When editing a note, it bumps said note to the top
 
 ## TODO:
 
