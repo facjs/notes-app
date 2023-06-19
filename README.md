@@ -17,4 +17,4 @@ It does Lazy State Initialization so React doesn't run notes state and therefore
 
 ## Preview:
 
-![Preview](https://i.imgur.com/54jnUzA.png)
+![Preview](https://i.imgur.com/gvWSMUa.png)
