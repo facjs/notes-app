@@ -4,6 +4,8 @@
 
 Project I am working on to test my React knowledge, I put into practice what I have learnt about props, state, useEffect, conditional rendering and some libraries as well!
 
+It does Lazy State Initialization so React doesn't run notes state every time it re-renders when you make changes (type into a note).
+
 -   Uses react-mde, showdown, split and nanoid
 -   Saves notes in localStorage
 
