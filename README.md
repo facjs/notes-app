@@ -11,7 +11,6 @@ It does Lazy State Initialization so React doesn't run notes state and therefore
 
 ## TODO:
 
--   Functionality to delete a note
 -   Replace localStorage with Firebase
 
 ## Preview:
