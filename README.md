@@ -11,3 +11,5 @@ Project I am working on to test my React knowledge, I put into practice what I h
 -   Use the summary as the title for every note
 -   Bump most recent note to the top
 -   Replace localStorage with Firebase
+
+## Preview:
