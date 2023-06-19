@@ -28,10 +28,6 @@ button:focus {
     height: 100vh;
 }
 
-.sidebar--note {
-    /* display: flex; */
-}
-
 .sidebar--header {
     display: flex;
     justify-content: space-around;
@@ -44,7 +40,7 @@ button:focus {
 
 .new-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #4a4e74;
     border: none;
     color: white;
     border-radius: 3px;
@@ -54,7 +50,7 @@ button:focus {
 
 .first-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #4a4e74;
     border: none;
     color: white;
     border-radius: 3px;
@@ -95,14 +91,14 @@ button:focus {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.2rem;
-    color: #4A4E74;
+    color: #4a4e74;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .selected-note {
-    background-color: #4A4E74;
+    background-color: #4a4e74;
 }
 
 .selected-note .text-snippet {
@@ -112,7 +108,6 @@ button:focus {
 
 .gutter {
     background-color: #eee;
-
     background-repeat: no-repeat;
     background-position: 50%;
 }
