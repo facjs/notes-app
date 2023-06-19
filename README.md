@@ -1,5 +1,7 @@
 # Note App
 
+### Live: https://candid-melomakarona-70adcb.netlify.app/
+
 Project I am working on to test my React knowledge, I put into practice what I have learnt about props, state, useEffect, conditional rendering and some libraries as well!
 
 -   Uses react-mde, showdown, split and nanoid
@@ -13,3 +15,5 @@ Project I am working on to test my React knowledge, I put into practice what I h
 -   Replace localStorage with Firebase
 
 ## Preview:
+
+![Preview](https://i.imgur.com/54jnUzA.png)
