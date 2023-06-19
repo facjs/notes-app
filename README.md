@@ -12,7 +12,6 @@ It does Lazy State Initialization so React doesn't run notes state and therefore
 ## TODO:
 
 -   Functionality to delete a note
--   Bump most recent note to the top
 -   Replace localStorage with Firebase
 
 ## Preview:
