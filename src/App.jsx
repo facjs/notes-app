@@ -23,11 +23,21 @@ export default function App() {
     }
 
     function updateNote(text) {
-        setNotes((oldNotes) =>
-            oldNotes.map((oldNote) => {
-                return oldNote.id === currentNoteId ? { ...oldNote, body: text } : oldNote;
-            })
-        );
+        setNotes((prevNotes) => {
+            const newArray = [];
+
+            for (let i = 0; i < prevNotes.length; i++) {
+                const prevNote = prevNotes[i];
+
+                if (prevNote.id === currentNoteId) {
+                    newArray.unshift({ ...prevNote, body: text });
+                } else {
+                    newArray.push(prevNote);
+                }
+            }
+
+            return newArray;
+        });
     }
 
     function findCurrentNote() {
