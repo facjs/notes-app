@@ -5,12 +5,12 @@ import Split from 'react-split';
 import { nanoid } from 'nanoid';
 
 export default function App() {
-    const [notes, setNotes] = useState(() => JSON.parse(localStorage.getItem('notes')) || []);
-    const [currentNoteId, setCurrentNoteId] = useState((notes[0] && notes[0].id) || '');
+    const [notes, setNotes] = useState(() => JSON.parse(localStorage.getItem('notes')) || []); // get notes from localStorage if they exists
+    const [currentNoteId, setCurrentNoteId] = useState((notes[0] && notes[0].id) || ''); // check if exists a note before trying to access note's ID otherwise just default to empty string
 
     useEffect(() => {
-        localStorage.setItem('notes', JSON.stringify(notes));
-    }, [notes]);
+        localStorage.setItem('notes', JSON.stringify(notes)); // save notes
+    }, [notes]); // so it runs every time notes array changes
 
     function createNewNote() {
         const newNote = {
@@ -24,6 +24,7 @@ export default function App() {
 
     function updateNote(text) {
         setNotes((prevNotes) => {
+            // this is so we push the current note being edited to the top so we dont lose track of it - done in an imperative way but I can imagine there's a more declarative and *clever* way to do this
             const newArray = [];
 
             for (let i = 0; i < prevNotes.length; i++) {
@@ -40,6 +41,7 @@ export default function App() {
         });
     }
 
+    // used filter so it returns all the notes that dont match the note's ID being deleted
     function deleteNote(evt, noteId) {
         evt.stopPropagation();
         setNotes((prevNotes) => prevNotes.filter((note) => note.id !== noteId));
